@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网盘导航 - ShowBy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/disk.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="assets/images/avatar.png" alt="Logo" class="avatar">
+                <h1 class="logo-text">showby<span class="top-domain">.top</span></h1>
+            </div>
+            <a href="index.html" class="back-button"><i class="fa fa-arrow-left"></i> 返回主页</a>
+        </header>
+
+        <main>
+            <div class="disk-page">
+                <h2 class="page-title">网盘网站导航</h2>
+                
+                <div class="disk-sites-container">
+                    <div class="disk-sites" id="diskSitesList">
+                        <!-- Default disk sites -->
+                        <a href="https://pan.baidu.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-cloud-download"></i></div>
+                            <div class="site-info">
+                                <h3>百度网盘</h3>
+                                <p>国内领先的云存储服务平台</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.aliyundrive.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-cloud"></i></div>
+                            <div class="site-info">
+                                <h3>阿里云盘</h3>
+                                <p>阿里巴巴集团推出的云存储服务</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://cloud.tencent.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-cloud-upload"></i></div>
+                            <div class="site-info">
+                                <h3>腾讯云</h3>
+                                <p>腾讯云存储与计算服务</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.jianguoyun.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-hdd-o"></i></div>
+                            <div class="site-info">
+                                <h3>坚果云</h3>
+                                <p>专注于文件同步和团队协作</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.google.com/drive/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-google"></i></div>
+                            <div class="site-info">
+                                <h3>Google Drive</h3>
+                                <p>谷歌提供的云存储服务</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://onedrive.live.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-windows"></i></div>
+                            <div class="site-info">
+                                <h3>OneDrive</h3>
+                                <p>微软公司的云存储服务</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.dropbox.com/" class="disk-site-card" target="_blank">
+                            <div class="site-icon"><i class="fa fa-dropbox"></i></div>
+                            <div class="site-info">
+                                <h3>Dropbox</h3>
+                                <p>国际知名的云存储服务</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="add-site-section">
+                    <h3>添加自定义网盘网站</h3>
+                    <div class="add-site-form">
+                        <input type="text" id="siteName" placeholder="网站名称" required>
+                        <input type="text" id="siteUrl" placeholder="网站链接 (以 http:// 或 https:// 开头)" required>
+                        <input type="text" id="siteDescription" placeholder="网站描述 (可选)">
+                        <select id="siteIcon">
+                            <option value="fa-cloud">云图标</option>
+                            <option value="fa-cloud-download">云下载图标</option>
+                            <option value="fa-cloud-upload">云上传图标</option>
+                            <option value="fa-hdd-o">硬盘图标</option>
+                            <option value="fa-database">数据库图标</option>
+                            <option value="fa-folder-open">文件夹图标</option>
+                            <option value="fa-server">服务器图标</option>
+                        </select>
+                        <button id="addSiteBtn">添加网站</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Copyright © 2023 - 2025 小白 & Made by imsyy</p>
+        </footer>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/disk.js"></script>
+</body>
+</html> 
